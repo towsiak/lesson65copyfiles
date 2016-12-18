@@ -58,13 +58,13 @@ namespace lesson65copyfiles
         {
             if(chkAll.Checked)
             {
-                for (int i = 0; i < checkedListBox1.Items.Count; i++)//needed so we can examine and check each box in the checked box list
-                    checkedListBox1.SetItemChecked(i, true);//checks each check box in the checked box list
+                for (int i = 0; i < checkedListBox1.Items.Count; i++)//needed to grab each box inside the check list box
+                    checkedListBox1.SetItemChecked(i, true);//check the box at index i
             }
             else
             {
-                for (int i = 0; i < checkedListBox1.Items.Count; i++)//needed so we can examine and check each box in the checked box list
-                    checkedListBox1.SetItemChecked(i, false);//unchecks each item in the checked items list
+                for (int i = 0; i < checkedListBox1.Items.Count; i++)//needed to grab each box inside the check list box
+                    checkedListBox1.SetItemChecked(i, false);//false value indicates each item in the box should be unchcked
             }
         }
     }
